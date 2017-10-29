@@ -45,6 +45,12 @@ client.on('message', message => {
     if (message.content === 'IM LOYAL') {
     	message.reply('sure jan,, sure');
   	}
+    if (message.content === 'nana is gay') {
+    	message.reply('gay for me ^ q ^');
+  	}
+    if (message.content === 'WO AI NI') {
+    	message.reply('WO AI NI BACK AT YA');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY

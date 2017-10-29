@@ -51,6 +51,9 @@ client.on('message', message => {
     if (message.content === 'WO AI NI') {
     	message.reply('WO AI NI BACK AT YA');
     }
+    if (message.content === 'IM NOT GAY') {
+    	message.reply('But thats Tomos lie, isnt it?');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY

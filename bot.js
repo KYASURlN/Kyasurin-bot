@@ -36,6 +36,15 @@ client.on('message', message => {
     if (message.content === 'TOI YEU KYO') {
     	message.reply('KYO YEU EM LUON!!');
   	}
+    if (message.content === 'im straight') {
+    	message.reply('well thats a lie');
+  	}
+    if (message.content === 'IM STRAIGHT') {
+    	message.reply('sure jan');
+  	}
+    if (message.content === 'IM LOYAL') {
+    	message.reply('sure jan,, sure');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY

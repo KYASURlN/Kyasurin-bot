@@ -54,6 +54,12 @@ client.on('message', message => {
     if (message.content === 'IM NOT GAY') {
     	message.reply('But thats Tomos lie, isnt it?');
     }
+    if (message.content === 'im not gay') {
+    	message.reply('greatest joke of 2k17');
+    }
+    if (message.content === 'tomo is not gay') {
+    	message.reply('SURE JAN HAHAHAHA');
+    }
     if (message.content === 'daisuki kyo') {
     	message.reply('daikirai');
     }

@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong right back at ya \ntest');
+    	message.reply('pong right back at ya')('test');
   	}
     if (message.content === 'tomo is gay') {
     	message.reply('THIS IS VERY MUCH TRUE');

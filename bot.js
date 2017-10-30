@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong right back at ya');
-        message.reply('test');
+        message.reply2('test');
   	}
     if (message.content === 'tomo is gay') {
     	message.reply('THIS IS VERY MUCH TRUE');
@@ -74,6 +74,15 @@ client.on('message', message => {
     	message.reply('daikirai');
     }
 });
+
+string[] predictionsTexts = new string[]
+            {
+                "It is very unlikely.",
+                "I don't think so...",
+                "Yes !",
+                "I don't know",
+                "No.",
+            };
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

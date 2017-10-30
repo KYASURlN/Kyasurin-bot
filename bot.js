@@ -75,6 +75,17 @@ client.on('message', message => {
     }
 });
 
+[Command("8ball")]
+[Summary("Gives a prediction")]
+public async Task EightBall([Remainder] string input)
+{
+    int randomIndex = rand.Next(predictionsTexts.Length);
+    string text = predictionsTexts[randomIndex];
+    await ReplyAsync(Context.User.Mention + ", " + text);
+}
+
+Random rand = new Random();
+
 string[] predictionsTexts = new string[]
             {
                 "It is very unlikely.",

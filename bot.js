@@ -75,25 +75,5 @@ client.on('message', message => {
     }
 });
 
-[Command("8ball")]
-[Summary("Gives a prediction")]
-public async Task EightBall([Remainder] string input)
-{
-    int randomIndex = rand.Next(predictionsTexts.Length);
-    string text = predictionsTexts[randomIndex];
-    await ReplyAsync(Context.User.Mention + ", " + text);
-}
-
-Random rand = new Random();
-
-string[] predictionsTexts = new string[]
-            {
-                "It is very unlikely.",
-                "I don't think so...",
-                "Yes !",
-                "I don't know",
-                "No.",
-            };
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

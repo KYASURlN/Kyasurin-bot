@@ -5,17 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-const responseObject = {
-  "ping": "Pong's definition means a strong an unpleasant smell.",
-  "tomo is gay": "OH HELL YEAH THIS IS TRUE",
-  "wheres kyo": "I'm right fucking here."
-  "im gay for kyo": "woah there buckaroo."
-};
-
-client.on("message", (message) => {
-  if(responseObject[message.content]) {
-    message.channel.send(responseObject[message.content]);
-  }
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY

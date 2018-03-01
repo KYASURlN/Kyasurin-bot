@@ -1,15 +1,31 @@
-let Discord = require('discord.js');
-let bot = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-bot.on('ready', function() {
-	console.log(Discord.version);
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
-bot.on('message', function(message) {
-	if (message.content == 'start')
-		message.channel.startTyping();
-	if (message.content == 'stop')
-		message.channel.stopTyping();
+client.on('message', message => {
+    if (message.content.toLowerCase() === 'ping') {
+        message.channel.sendMessage('Is there something you require?');
+        }
+});
+
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
+  newUsers[guild.id].set(member.id, member.user);
+
+  if (newUsers[guild.id].size > 1) {
+    const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
+    guild.channels.get(guild.id).send("Welcome our new users!\n" + userlist);
+    newUsers[guild.id].clear();
+  }
+});
+
+client.on("guildMemberRemove", (member) => {
+  const guild = member.guild;
+  if (newUsers[guild.id].has(member.id)) newUsers.delete(member.id);
 });
 
 // THIS  MUST  BE  THIS  WAY

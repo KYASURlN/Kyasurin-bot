@@ -5,10 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-bot.on('guildMemberAdd', member => {
-   member.send("Welcome to the server!");
-});
-
 client.on('message', message => {
     if (message.content.toLowerCase() === 'ping') {
         message.channel.sendMessage('Ring-a-ling!!');

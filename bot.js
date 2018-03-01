@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content.toLowerCase() === 'ping') {
-        message.channel.sendMessage('AAAAAAAAAAAHHHHHHHH');
+        message.author.sendMessage('AAAAAAAAAAAHHHHHHHH');
         }
 });
 

@@ -11,5 +11,9 @@ client.on('message', message => {
         }
 });
 
+client.on("serverNewMember", (server, user) => {
+     client.sendMessage(user, "Welcome to: " + server.name);
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

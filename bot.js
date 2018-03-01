@@ -18,6 +18,9 @@ client.on('message', message => {
     if (message.content === 'what is my avatar') {
     message.reply(message.author.avatarURL);
         }
+    if (message.content === 'triggered') {
+        message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
+        }
 });
 
 client.on('guildMemberAdd', member => {

@@ -19,9 +19,7 @@ client.on('message', message => {
     message.reply(message.author.avatarURL);
         }
     if (message.content.toLowerCase() === 'triggered') {
-        message.channel.send("triggered", {
-    file: "https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png" // Or replace with FileOptions object
-});
+        message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
 
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'member-log');

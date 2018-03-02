@@ -23,9 +23,5 @@ client.on('message', message => {
         }
 });
 
-Client.on("guildMemberAdd", member => {
-   member.guild.defaultChannel.send("Welcome to: " + member.guild.name + " Hope you enjoy it here")
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

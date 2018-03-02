@@ -21,15 +21,6 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'triggered') {
         message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
         }
-});
-
-client.on("message", async message => {
-  // This event will run on every single message received, from any channel or DM.
-  
-  // Here we separate our "command" name, and our "arguments" for the command. 
-  // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
-  // command = say
-  // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(config.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
@@ -44,6 +35,7 @@ client.on("message", async message => {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   });
+
 
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'member-log');

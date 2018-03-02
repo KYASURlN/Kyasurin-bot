@@ -16,7 +16,7 @@ client.on('message', message => {
         message.channel.sendMessage("That's so sweet!");
         }
     if (message.content === 'what is my avatar') {
-    message.reply(message.author.avatarURL);
+        message.reply(message.author.avatarURL);
         }
     if (message.content.toLowerCase() === 'triggered') {
         message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
@@ -26,7 +26,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'member-log');
   if (!channel) return;
-  channel.send(`Welcome to the server, ${member}`);
+  channel.send('Welcome to the server, ${member}');
 });
 
 // THIS  MUST  BE  THIS  WAY

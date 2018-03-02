@@ -23,5 +23,16 @@ client.on('message', message => {
         }
 });
 
+var tabHello = ['Bonjour','Salut','Hello', 'Guten tag', 'Buenos Dias'];
+var tabAnsw = ['Bonjour votre majesté.','Salutations jeune Douzien !','Ouais, ouais. T\'es qui déjà ?', 'Bonjour ' + message.author + ', comment vas-tu aujourd\'hui ?'];
+var content = message.content.split(' ');
+
+for(var x = 0; x < content.length; x++){
+    if(tabHello.includes(content[x]) && message.isMentioned(client.user)){
+        var row = Math.floor(Math.random() * tabAnsw.length);
+        message.channel.send(tabAnsw[row]);
+    }
+}
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

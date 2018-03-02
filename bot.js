@@ -21,12 +21,7 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'triggered') {
         message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
         }
-  const args = message.content.slice(config.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  
-  // Let's go with a few common example commands! Feel free to delete or change those.
-  
-  if(command === "say") {
+  if (command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");

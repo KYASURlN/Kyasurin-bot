@@ -27,6 +27,9 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'dancing in september') {
         message.channel.sendMessage("STOPSOTPSOTPSOPTOSPOTPSOPTOPSOTPED YAMETEAM EYAMET");
         }
+    if (message.content.toLowerCase() === 'im straight') {
+        message.channel.sendMessage("sure jan");
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY

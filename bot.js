@@ -21,6 +21,12 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'triggered') {
         message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
         }
+    if (message.content.toLowerCase() === 'bai i yai') {
+        message.channel.sendMessage("I SWEAR TO FUCKING GOD I WILL SMASH MY HEAD THROUGH UR FUCKING WINDOW");
+        }
+    if (message.content.toLowerCase() === 'dancing in september') {
+        message.channel.sendMessage("STOPSOTPSOTPSOPTOSPOTPSOPTOPSOTPED YAMETEAM EYAMET");
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY

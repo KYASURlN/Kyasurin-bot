@@ -33,6 +33,15 @@ client.on('message', message => {
     if (message.content.toLowerCase() === '^ u ^') {
         message.channel.sendMessage("if tomo is saying that pls stop ur killing me");
         }
+    if (message.content.toLowerCase() === 'im straight') {
+        message.channel.sendMessage("SURE JAN");
+        }
+    if (message.content.toLowerCase() === 'kyo') {
+        message.channel.sendMessage("yah thats me");
+        }
+     if (message.content.toLowerCase() === 'kat') {
+        message.channel.sendMessage("who the fuck-");
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY

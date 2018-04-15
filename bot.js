@@ -30,6 +30,9 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'im gay') {
         message.channel.sendMessage("we all know this");
         }
+    if (message.content.toLowerCase() === '^ u ^') {
+        message.channel.sendMessage("if tomo is saying that pls stop ur killing me");
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY

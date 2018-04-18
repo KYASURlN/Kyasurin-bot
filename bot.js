@@ -45,6 +45,9 @@ client.on('message', message => {
      if (message.content.toLowerCase() === 'wheres kyo') {
         message.channel.sendMessage("either depressed, sleeping, or working there no in between tbh");
         }
+     if (message.content.toLowerCase() === 'im tom') {
+        message.channel.sendMessage("TOM I SWEAR TO FUCKING GOD ONE MORE TIME AND ILL MURDER YOU");
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY

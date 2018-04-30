@@ -46,7 +46,10 @@ client.on('message', message => {
         message.channel.sendMessage("either depressed, sleeping, or working there no in between tbh");
         }
      if (message.content.toLowerCase() === 'im tom') {
-        message.channel.sendMessage("TOM I SWEAR TO FUCKING GOD ONE MORE TIME AND ILL MURDER YOU");
+        message.channel.sendMessage("one more time i dare you fucker");
+        }
+     if (message.content.toLowerCase() === 'nut') {
+        message.channel.sendMessage("https://www.dailydot.com/wp-content/uploads/228/6f/ab64a69d4cd848bad23ed0f9190a91eb.jpg");
         }
 });
 

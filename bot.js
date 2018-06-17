@@ -5,12 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on("ready", () => {
-    client.user.setActivity({game: {name: "with my code", type: 0}});
-});
-
+const prefix = "k!";
 client.on('message', message => {
-    if (message.content.toLowerCase() === 'ping') {
+      if (!message.content.startsWith(prefix)) return;
+    
+    if (message.content.toLowerCase.startsWith(prefix + "ping")) {
         message.channel.sendMessage('Ring-a-ling!!');
         }
     if (message.content.toLowerCase() === 'tomo is gay') {

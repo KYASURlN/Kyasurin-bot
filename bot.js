@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
+client.on("ready", () => {
+    client.user.setStatus("dnd");
 });
 
 client.on('message', message => {
@@ -54,6 +54,7 @@ client.on('message', message => {
      if (message.content.toLowerCase() === 'im a lesbian') {
         message.channel.sendMessage("leahbian");
         }
+     if message.guild.channels.find("name", "channel_name").sendMessage("blabla");
 });
 
 // THIS  MUST  BE  THIS  WAY

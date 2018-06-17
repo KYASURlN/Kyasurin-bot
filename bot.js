@@ -5,11 +5,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-const prefix = "k!";
 client.on("message", (message) => {
-      if (!message.content.startsWith(prefix)) return;
-    
-    if (message.content.toLowerCase.startsWith(prefix + "ping")) {
+    if (message.content.toLowerCase() === 'ping') {
         message.channel.sendMessage('Ring-a-ling!!');
         } else
     if (message.content.toLowerCase() === 'tomo is gay') {

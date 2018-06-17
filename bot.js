@@ -5,10 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on("ready", () => {
-    client.user.setActivity({game: {name: "with my code", type: 0}});
-});
-
 client.on('message', message => {
     if (message.content.toLowerCase() === 'ping') {
         message.channel.sendMessage('Ring-a-ling!!');

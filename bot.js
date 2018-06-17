@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+bot.on('ready', () => {
+  bot.user.setGame('GAME HERE')
+})
+
 client.on('message', message => {
     if (message.content.toLowerCase() === 'ping') {
         message.channel.sendMessage('Ring-a-ling!!');

@@ -11,7 +11,7 @@ client.on("message", (message) => {
     
     if (message.content.toLowerCase.startsWith(prefix + "ping")) {
         message.channel.sendMessage('Ring-a-ling!!');
-        }
+        } else
     if (message.content.toLowerCase() === 'tomo is gay') {
         message.channel.sendMessage('Can confirm tbh');
         }

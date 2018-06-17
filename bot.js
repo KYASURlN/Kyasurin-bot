@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-  client.user.setGame('GAME HERE')
+  client.user.setGame('IS THIS SHOWING UP')
 })
 
 client.on('message', message => {

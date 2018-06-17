@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 const prefix = "k!";
-client.on('message', message => {
+client.on("message", (message) => {
       if (!message.content.startsWith(prefix)) return;
     
     if (message.content.toLowerCase.startsWith(prefix + "ping")) {

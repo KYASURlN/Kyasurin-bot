@@ -54,7 +54,6 @@ client.on('message', message => {
      if (message.content.toLowerCase() === 'im a lesbian') {
         message.channel.sendMessage("leahbian");
         }
-     if message.guild.channels.find("name", "channel_name").sendMessage("blabla");
 });
 
 // THIS  MUST  BE  THIS  WAY

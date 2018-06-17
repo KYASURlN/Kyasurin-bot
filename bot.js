@@ -10,16 +10,16 @@ client.on('message', message => {
         message.channel.sendMessage('Ring-a-ling!!');
         }
     if (message.content.toLowerCase() === 'tomo is gay') {
-        message.channel.sendMessage('Oh yeah, absolutely.');
+        message.channel.sendMessage('Can confirm tbh');
         }
     if (message.content.toLowerCase() === 'i love kyo') {
-        message.channel.sendMessage("That's so sweet!");
+        message.channel.sendMessage("nice");
         }
     if (message.content === 'what is my avatar') {
         message.reply(message.author.avatarURL);
         }
     if (message.content.toLowerCase() === 'triggered') {
-        message.channel.sendMessage("https://orig00.deviantart.net/3839/f/2018/060/a/0/untitled_1__3__by_kyasurln-dc4o53d.png");
+        message.channel.sendMessage("https://file.toyhou.se/images/7336489_5xvRwS5bylHdn0y.png");
         }
     if (message.content.toLowerCase() === 'bai i yai') {
         message.channel.sendMessage("Im going to fucking eat my left foot");
@@ -28,28 +28,31 @@ client.on('message', message => {
         message.channel.sendMessage("STOPSOTPSOTPSOPTOSPOTPSOPTOPSOTPED YAMETEAM EYAMET");
         }
     if (message.content.toLowerCase() === 'im gay') {
-        message.channel.sendMessage("we all know this");
+        message.channel.sendMessage("u dont need to say it we already knew");
         }
     if (message.content.toLowerCase() === '^ u ^') {
         message.channel.sendMessage("if tomo is saying that pls stop ur killing me");
         }
     if (message.content.toLowerCase() === 'im straight') {
-        message.channel.sendMessage("SURE JAN");
+        message.channel.sendMessage("this is a fucking big fat lie");
         }
     if (message.content.toLowerCase() === 'kyo') {
-        message.channel.sendMessage("yah thats me");
+        message.channel.sendMessage("what do you need?");
         }
      if (message.content.toLowerCase() === 'kat') {
-        message.channel.sendMessage("who the fuck-");
+        message.channel.sendMessage("aight what up");
         }
      if (message.content.toLowerCase() === 'wheres kyo') {
         message.channel.sendMessage("either depressed, sleeping, or working there no in between tbh");
         }
      if (message.content.toLowerCase() === 'im tom') {
-        message.channel.sendMessage("this relationship is on thin ice");
+        message.channel.sendMessage("you really want to be stabbed today dont you huh");
         }
      if (message.content.toLowerCase() === 'nut') {
         message.channel.sendMessage("https://www.dailydot.com/wp-content/uploads/228/6f/ab64a69d4cd848bad23ed0f9190a91eb.jpg");
+        }
+     if (message.content.toLowerCase() === 'im a lesbian') {
+        message.channel.sendMessage("leahbian");
         }
 });
 
